@@ -1,0 +1,254 @@
+/* General Styles */
+.agri-experts {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.header {
+  background-image: url('https://agriculturepost.com/wp-content/uploads/2021/01/Future-of-Indian-agriculture-lies-on-tech-driven-farming-practices-Vice-President.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-content {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Improved readability */
+  border-radius: 10px;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Experts Section */
+.experts-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.experts-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #2a440b;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.expert-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.expert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.expert-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.expert-card:hover .expert-image {
+  transform: scale(1.05);
+}
+
+.expert-info {
+  padding: 20px;
+}
+
+.expert-info h3 {
+  margin: 0;
+  color: #537728;
+  font-size: 1.5em;
+}
+
+.expert-domain {
+  font-weight: bold;
+  color: #405e20;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+.expert-experience {
+  color: #777;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.expert-description {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.achievements-list li {
+  margin-bottom: 5px;
+  color: #405e20;
+  position: relative;
+  padding-left: 20px;
+}
+
+.achievements-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #537728;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.expert-contact {
+  margin: 5px 0;
+  color: #555;
+}
+
+.expert-contact a {
+  color: #537728;
+  text-decoration: none;
+}
+
+.expert-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Call to Action Section */
+/* Call to Action Section */
+.call-to-action {
+  background-color: #537728;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.cta-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Space above the button */
+}
+
+.cta-button {
+  background-color: #405e20;
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center; /* Center text inside button */
+  display: inline-block; /* Ensure button does not stretch to full width */
+}
+
+.cta-button:hover {
+  background-color: #6d8f4f;
+  transform: translateY(-3px);
+}
+
+
+/* Contact Modal */
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contact-modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-modal-content h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #2a440b;
+}
+
+.contact-modal-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.contact-modal-content a {
+  color: #537728;
+  text-decoration: none;
+}
+
+.contact-modal-content a:hover {
+  text-decoration: underline;
+}

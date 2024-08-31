@@ -1,0 +1,102 @@
+/* Reset default margins and padding for the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e9ecef; /* Optional: background color for the entire page */
+}
+
+/* Main container for the mission section */
+.mission-container {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title styling */
+.mission-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2e7d32;
+    margin-bottom: 2rem;
+}
+
+/* Mission text styling */
+.mission-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Brand name styling */
+.brand-name {
+    font-weight: 800;
+    color: #2e7d32;
+}
+
+/* List section styling */
+.mission-list {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.mission-list li {
+    margin-bottom: 1.5rem;
+}
+
+/* Subheading within list items */
+.mission-list h3 {
+    font-size: 1.8rem;
+    color: #388e3c;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraph text within list items */
+.mission-list p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Nested list styling */
+.mission-list ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-top: 0.75rem;
+}
+
+.mission-list ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .mission-container {
+        padding: 2rem;
+    }
+
+    .mission-title {
+        font-size: 2.5rem;
+    }
+
+    .mission-text,
+    .mission-list h3,
+    .mission-list p {
+        font-size: 1.1rem;
+    }
+}
